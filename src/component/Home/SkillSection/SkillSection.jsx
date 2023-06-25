@@ -6,6 +6,8 @@ import mongodb from "../../../assets/mongodb-logo.png";
 import express from "../../../assets/express.png";
 import javascript from "../../../assets/javascript.png";
 import tailwind from "../../../assets/tailwind.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SkillSection = () => {
   return (

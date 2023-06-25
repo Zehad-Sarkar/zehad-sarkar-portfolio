@@ -62,6 +62,7 @@ const ContactForm = () => {
             type="button"
             onClick={handleSubmit}
             className="mt-2 btn btn-primary"
+            disabled={!name || !email || !message}
           >
             Send Message
           </button>
