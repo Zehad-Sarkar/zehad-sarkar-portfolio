@@ -16,7 +16,9 @@ const Contact = () => {
           </div>
           <div className="mb-2">
             <span className="font-semibold">Email:</span>
-            <a href="mailto:zehadsarkar22@gmail.com">zehadsarkar22@gmail.com</a>
+            <a href="mailto:zehadsarkar22@gmail.com" className="ml-2 text-blue-400">
+              zehadsarkar22@gmail.com
+            </a>
           </div>
           <div className="mb-2">
             <span className="font-semibold">Phone:</span>
@@ -28,6 +30,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/r-a-zehad-sarkar-developer/"
               target="_blank"
               rel="noreferrer"
+              className="ml-2 text-blue-400"
             >
               zehad sarkar
             </a>

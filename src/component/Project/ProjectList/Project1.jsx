@@ -1,8 +1,13 @@
-import React from "react";
+import Image1 from "../../../assets/project1image.jpg";
+import Image2 from "../../../assets/project1image2.jpg";
 
 const Project1 = () => {
   return (
     <div className="mt-20 project-card">
+      <div className="grid lg:grid-cols-2">
+        <img src={Image1} alt="" />
+        <img src={Image2} alt="" />
+      </div>
       <h3 className="text-2xl font-medium">Project Name: Toy Thriver</h3>
       <ul>
         <li>
