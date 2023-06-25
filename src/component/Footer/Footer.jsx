@@ -1,5 +1,7 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Download from "../ResumeDownload/Download";
 
 const Footer = () => {
   return (
@@ -10,6 +12,15 @@ const Footer = () => {
             <h4 className="text-xl font-bold">Contact</h4>
             <p className="mt-2 select-none">Email: zehadsarkar22@gmail.com</p>
             <p className="select-none">Phone: +880 1930406486</p>
+          </div>
+          {/* middle service */}
+          <div className="flex-col md:flex">
+            <Link to="/">Home</Link>
+            <Link to="/about">About-Me</Link>
+            <Link to="/contact">Contact</Link>
+            <Link className="flex gap-1">
+              <Download />
+            </Link>
           </div>
           <div className="mb-4 md:mb-0">
             <h4 className="text-xl font-bold text-center">Follow Me</h4>
@@ -35,8 +46,8 @@ const Footer = () => {
         </div>
         <hr className="my-4 border-gray-700" />
         <p className="text-sm text-center">
-          &copy; 2023 Web Developer Portfolio. All rights reserved. | Design inspired by
-          Zehad Sarkar
+          &copy; 2023 Web Developer Portfolio. All rights reserved. | Design
+          inspired by Zehad Sarkar
         </p>
       </div>
     </footer>

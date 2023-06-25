@@ -35,7 +35,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="m-8">
+  <div className="mx-8 my-1">
     <RouterProvider router={router} />
   </div>
 );

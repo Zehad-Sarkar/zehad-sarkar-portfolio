@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import zs from "../../../assets/zs.jpg";
+import Download from "../../ResumeDownload/Download";
 
 const Navbar = () => {
   //navmenu list
@@ -11,11 +12,9 @@ const Navbar = () => {
       <Link className="menuLink" to="/project">
         Project
       </Link>
-      <Link className="menuLink" to="/about">
-        About-Me
-      </Link>
-      <Link className="menuLink" to="/contact">
-        Contact
+      <Link className="menuLink">
+       
+        <Download />
       </Link>
     </>
   );
@@ -46,17 +45,17 @@ const Navbar = () => {
             {navMenu}
           </ul>
         </div>
-        <Link className="ml-4 text-4xl font-extrabold normal-case text-[#d96459] reletive ">
+        <Link className="ml-4 text-3xl md:text-4xl font-extrabold normal-case text-[#d96459] reletive ">
           Zehad Sarkar
-          <span className="absolute text-2xl font-medium text-[#e64a19] md:top-24  md:left-20 left-12 top-32">
+          <span className="absolute text-2xl font-medium text-[#e64a19] md:top-20  md:left-20 left-12 top-24">
             Web Developer Portfolio
           </span>
         </Link>
       </div>
-      <div className="hidden navbar-center lg:flex">
+      <div className="hidden navbar-end lg:flex">
         <ul className="z-10 px-1 py-1 menu menu-horizontal ">{navMenu}</ul>
       </div>
-      <div className="navbar-end">
+      {/* <div className="navbar-end">
         <Link>
           <img
             src={zs}
@@ -64,7 +63,7 @@ const Navbar = () => {
             style={{ borderRadius: "50%" }}
           />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
