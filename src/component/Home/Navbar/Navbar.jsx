@@ -13,7 +13,6 @@ const Navbar = () => {
         Project
       </Link>
       <Link className="menuLink">
-       
         <Download />
       </Link>
     </>
@@ -47,23 +46,14 @@ const Navbar = () => {
         </div>
         <Link className="ml-4 text-3xl md:text-4xl font-extrabold normal-case text-[#d96459] reletive ">
           Zehad Sarkar
-          <span className="absolute text-2xl font-medium text-[#e64a19] md:top-20  md:left-20 left-12 top-24">
-            Web Developer Portfolio
+          <span className="absolute text-2xl font-medium text-[#e64a19] md:top-20  md:left-40 left-12 top-24">
+            Web Developer
           </span>
         </Link>
       </div>
       <div className="hidden navbar-end lg:flex">
         <ul className="z-10 px-1 py-1 menu menu-horizontal ">{navMenu}</ul>
       </div>
-      {/* <div className="navbar-end">
-        <Link>
-          <img
-            src={zs}
-            className="w-16 h-16 "
-            style={{ borderRadius: "50%" }}
-          />
-        </Link>
-      </div> */}
     </div>
   );
 };

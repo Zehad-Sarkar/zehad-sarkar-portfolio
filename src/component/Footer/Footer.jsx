@@ -14,11 +14,11 @@ const Footer = () => {
             <p className="select-none">Phone: +880 1930406486</p>
           </div>
           {/* middle service */}
-          <div className="flex-col md:flex">
-            <Link to="/">Home</Link>
-            <Link to="/about">About-Me</Link>
-            <Link to="/contact">Contact</Link>
-            <Link className="flex gap-1">
+          <div className="grid flex-col gap-2 md:flex">
+            <Link className="ml-1" to="/">Home</Link>
+            <Link className="ml-1" to="/about">About-Me</Link>
+            <Link className="ml-1" to="/contact">Contact</Link>
+            <Link className="flex gap-1 ml-1">
               <Download />
             </Link>
           </div>
