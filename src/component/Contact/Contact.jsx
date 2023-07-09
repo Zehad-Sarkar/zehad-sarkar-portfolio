@@ -21,8 +21,8 @@ const Contact = () => {
             </a>
           </div>
           <div className="mb-2">
-            <span className="font-semibold">Phone:</span>
-            <a href="tel:+8801930406486">+880 1930406486</a>
+            {/* <span className="font-semibold">Phone:</span>
+            <a href="tel:+8801930406486"></a> */}
           </div>
           <div className="mb-2">
             <span className="font-semibold">Linkedin:</span>

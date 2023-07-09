@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <h4 className="text-xl font-bold">Contact</h4>
             <p className="mt-2 select-none">Email: zehadsarkar22@gmail.com</p>
-            <p className="select-none">Phone: +880 1930406486</p>
+            <p className="select-none"></p>
           </div>
           {/* middle service */}
           <div className="grid flex-col gap-2 md:flex">
