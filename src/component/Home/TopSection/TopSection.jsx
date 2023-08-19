@@ -3,8 +3,8 @@ import profile_picture from "../../../assets/zs.jpg";
 
 const TopSection = () => {
   return (
-    <div className="grid items-center justify-center gap-3 mt-8 mb-20 select-none lg:grid-cols-2">
-      <div className="order-2 space-y-4 lg:order-1">
+    <div className="grid items-end justify-center gap-3 mt-8 mb-20 select-none lg:grid-cols-2">
+      <div className="order-2 px-2 space-y-8 text-justify lg:order-1">
         <h4 className="text-3xl font-medium">Hi , I am </h4>
         <h3 className="pl-12 text-6xl font-bold text-indigo-600">
           Zehad Sarkar
@@ -33,11 +33,11 @@ const TopSection = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center order-1 mt-48 lg:order-2">
+      <div className="flex items-center justify-center order-1 mt-32 lg:order-2">
         <img
           src={profile_picture}
           className="rounded-lg sunlight-logo"
-          style={{ borderRadius: "200px 200px 50px 50px" }}
+          style={{ borderRadius: "100px 100px 10px 10px" }}
           alt="https://i.ibb.co/ZzRd5pj/zs.png"
         />
       </div>

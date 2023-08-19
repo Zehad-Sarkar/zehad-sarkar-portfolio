@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Contact = () => {
   return (
     <div className="container select-none">
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <SectionTitle title="Contact Info" />
       <hr />
       <div className="mt-4">
@@ -16,7 +20,10 @@ const Contact = () => {
           </div>
           <div className="mb-2">
             <span className="font-semibold">Email:</span>
-            <a href="mailto:zehadsarkar22@gmail.com" className="ml-2 text-blue-400">
+            <a
+              href="mailto:zehadsarkar22@gmail.com"
+              className="ml-2 text-blue-400"
+            >
               zehadsarkar22@gmail.com
             </a>
           </div>

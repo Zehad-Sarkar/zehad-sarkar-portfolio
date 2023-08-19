@@ -10,7 +10,7 @@ const Navbar = () => {
         Home
       </Link>
       <Link className="menuLink" to="/project">
-        Project
+        Projects
       </Link>
       <Link className="menuLink">
         <Download />

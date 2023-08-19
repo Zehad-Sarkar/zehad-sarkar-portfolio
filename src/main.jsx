@@ -1,6 +1,4 @@
-// import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layout/Main";
@@ -8,6 +6,7 @@ import Home from "./component/Home/Home/Home";
 import Project from "./component/Project/Project";
 import About from "./component/About/About";
 import Contact from "./component/Contact/Contact";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +34,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="mx-8 my-1">
-    <RouterProvider router={router} />
+  <div>
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </div>
 );

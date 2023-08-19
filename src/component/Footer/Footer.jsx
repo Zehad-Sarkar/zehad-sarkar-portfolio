@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Download from "../ResumeDownload/Download";
 
@@ -15,9 +15,15 @@ const Footer = () => {
           </div>
           {/* middle service */}
           <div className="grid flex-col gap-2 md:flex">
-            <Link className="ml-1" to="/">Home</Link>
-            <Link className="ml-1" to="/about">About-Me</Link>
-            <Link className="ml-1" to="/contact">Contact</Link>
+            <Link className="ml-1" to="/">
+              Home
+            </Link>
+            <Link className="ml-1" to="/about">
+              About-Me
+            </Link>
+            <Link className="ml-1" to="/contact">
+              Contact
+            </Link>
             <Link className="flex gap-1 ml-1">
               <Download />
             </Link>
